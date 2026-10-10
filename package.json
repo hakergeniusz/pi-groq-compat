@@ -1,0 +1,29 @@
+{
+	"name": "pi-groq-compat",
+	"version": "0.1.0",
+	"description": "Fixes Groq's OpenAI-incompatible chat template (developer role rejected) and keeps the groq model catalog in sync with the live API.",
+	"type": "module",
+	"license": "MIT",
+	"keywords": [
+		"pi",
+		"pi-package",
+		"groq",
+		"compat",
+		"extensions"
+	],
+	"pi": {
+		"extensions": [
+			"./index.ts"
+		]
+	},
+	"scripts": {
+		"typecheck": "tsc --noEmit"
+	},
+	"peerDependencies": {
+		"@earendil-works/pi-coding-agent": "*"
+	},
+	"devDependencies": {
+		"@types/node": "^26.6.4",
+		"typescript": "^5.9.3"
+	}
+}
